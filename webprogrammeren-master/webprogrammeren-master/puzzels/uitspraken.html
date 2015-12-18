@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Opgave 1</title>
+</head>
+<body>
+
+<script>
+var uitspraken = ["'Ieder nadeel heb zijn voordeel.'<br>","'Als wij de bal hebben kunnen zij niet scoren.'<br>", "'Voordat ik een fout maak, maak ik die fout niet'<br>","'Je gaat het pas zien als je het door hebt.'<br>","'Als Italianen één kans krijgen, maken ze er twee.'<br>", "'Vaak moet er iets gebeuren voordat er iets gebeurt.'<br>"];
+
+// één voor één:
+//document.write(uitspraken[0]);
+//document.write(uitspraken[1]);
+//document.write(uitspraken[2]);
+//document.write(uitspraken[4]);
+//document.write(uitspraken[5]);
+
+
+
+document.write('<strong>Hier demonstreer ik de <em>for-loop</em></strong><br>');
+
+for(var i = 0; i < 6;i=i+1){
+document.write(uitspraken[i]);
+}
+
+document.write('<strong>Hier demonstreer ik de <em>while-loop</em></strong><br>');
+
+var i = 0;
+while (i <6){
+	document.write(uitspraken[i]);
+	i++;
+}
+
+document.write('<strong>Hier is de random quote van de dag</strong><br>');
+
+alert(Math.random());
+
+// schrijf hier jouw oplossing
+</script>
+
+</body>
+</html>

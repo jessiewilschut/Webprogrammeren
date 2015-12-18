@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>	<meta charset="UTF-8">
+	<title>Lachen met Javascript</title>
+</head>
+<body>
+	<input type="text" id="invoer" placeholder="tekst invoer">
+	<input type="button" id="knop" value="controleer" disabled="disabled">
+	<p id="melding"> </p>
+
+	<script>
+	// leeg invoerveld bij inlogscherm, 
+
+	document.getElementById('knop').onclick = function(){
+		//alert("knop werkt");
+
+		// functionaliteit 1.3
+		var aantal = 0;
+		document.getElementById('knop').onclick= function(){
+
+		}
+
+		// functionaliteit 1.5
+		var invoer = document.getElementById('invoer').value;
+		if (invoer==""){
+				//alert("Wel wat invullen!");
+				document.getElementById('melding').innerHTML = "Wel wat invullen!";
+		}
+		aantal = aantal + 1; // afgekort aantal++  F 1.3
+		if (aantal == 3){
+			document.getElementById('knop').disabled= true;
+		}
+	}
+	</script>
+</body>
+</html> 
